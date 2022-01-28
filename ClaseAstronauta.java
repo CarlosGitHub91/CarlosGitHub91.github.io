@@ -2,7 +2,7 @@
 package astronauta;
 
 import java.util.Scanner;
-
+//Los cambios están hechos con comentarios
 public class ClaseAstronauta {
     
     public static void run(){
@@ -20,7 +20,8 @@ public class ClaseAstronauta {
         while(i){
             
             Scanner scan = new Scanner(System.in);
-            System.out.println("Introduce el peso del astronauta: ");
+            //Introduce la masa no el peso
+            System.out.println("Introduce la masa del astronauta: ");
             peso = scan.nextDouble();
             System.out.println("Introduce el planeta para saber la Fuerza que ejerce la gravedad con ese peso: \n venus\n marte\n mercurio\n jupiter\n saturno");
             planeta = scan.next();
@@ -49,6 +50,8 @@ public class ClaseAstronauta {
             c = scan.next().charAt(0);
             
             if (c == 'N'){
+                //Añadida línea
+                System.out.println("¡Gracias por usar el programa!");
                 System.out.println("Fin del programa.");
                 scan.close();
                 break;
